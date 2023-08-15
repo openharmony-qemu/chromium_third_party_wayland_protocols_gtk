@@ -1,37 +1,174 @@
-# chromium_third_party_wayland_protocols_gtk
+GTK — The GTK toolkit
+=====================
 
-#### 介绍
-设计替代X的显示服务器gtk
+[![Build status](https://gitlab.gnome.org/GNOME/gtk/badges/master/pipeline.svg)](https://gitlab.gnome.org/GNOME/gtk/-/commits/master)
 
-#### 软件架构
-软件架构说明
+General information
+-------------------
 
+GTK is a multi-platform toolkit for creating graphical user interfaces.
+Offering a complete set of widgets, GTK is suitable for projects ranging
+from small one-off projects to complete application suites.
 
-#### 安装教程
+GTK is free software and part of the GNU Project. However, the
+licensing terms for GTK, the GNU LGPL, allow it to be used by all
+developers, including those developing proprietary software, without any
+license fees or royalties.
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+The official download location
 
-#### 使用说明
+  - https://download.gnome.org/sources/gtk/
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+The official web site
 
-#### 参与贡献
+  - https://www.gtk.org
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+The official developers blog
 
+  - https://blog.gtk.org
 
-#### 特技
+Discussion forum
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+  - https://discourse.gnome.org/c/platform/core/
+
+Nightly documentation can be found at
+  - Gtk: https://gnome.pages.gitlab.gnome.org/gtk/gtk4/
+  - Gdk: https://gnome.pages.gitlab.gnome.org/gtk/gdk4/
+  - Gsk: https://gnome.pages.gitlab.gnome.org/gtk/gsk4/
+
+Nightly flatpaks of our demos can be installed from the
+[GNOME Nightly](https://wiki.gnome.org/Apps/Nightly) repository:
+  - `flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo` 
+  - `flatpak install gnome-nightly org.gtk.Demo4`
+  - `flatpak install gnome-nightly org.gtk.WidgetFactory4`
+  - `flatpak install gnome-nightly org.gtk.IconBrowser4`
+
+Building and installing
+-----------------------
+
+In order to build GTK you will need:
+
+  - [a C99 compatible compiler](https://wiki.gnome.org/Projects/GLib/CompilerRequirements)
+  - [Python 3](https://www.python.org/)
+  - [Meson](http://mesonbuild.com)
+  - [Ninja](https://ninja-build.org)
+
+You will also need various dependencies, based on the platform you are
+building for:
+
+  - [GLib](https://download.gnome.org/sources/glib/)
+  - [GdkPixbuf](https://download.gnome.org/sources/gdk-pixbuf/)
+  - [GObject-Introspection](https://download.gnome.org/sources/gobject-introspection/)
+  - [Cairo](https://www.cairographics.org/)
+  - [Pango](https://download.gnome.org/sources/pango/)
+  - [Epoxy](https://github.com/anholt/libepoxy)
+  - [Graphene](https://github.com/ebassi/graphene)
+  - [Xkb-common](https://github.com/xkbcommon/libxkbcommon)
+
+If you are building the X11 backend, you will also need:
+
+  - Xlib, and the following X extensions:
+    - xrandr
+    - xrender
+    - xi
+    - xext
+    - xfixes
+    - xcursor
+    - xdamage
+    - xcomposite
+
+If you are building the Wayland backend, you will also need:
+
+  - Wayland-client
+  - Wayland-protocols
+  - Wayland-cursor
+  - Wayland-EGL
+
+Once you have all the necessary dependencies, you can build GTK by using
+Meson:
+
+```sh
+$ meson _build .
+$ cd _build
+$ ninja
+```
+
+You can run the test suite using:
+
+```sh
+$ meson test
+```
+
+And, finally, you can install GTK using:
+
+```
+$ sudo ninja install
+```
+
+Complete information about installing GTK and related libraries
+can be found in the file:
+
+```
+docs/reference/gtk/html/gtk-building.html
+```
+
+Or [online](https://developer.gnome.org/gtk4/stable/gtk-building.html)
+
+How to report bugs
+------------------
+
+Bugs should be reported on the [issues page](https://gitlab.gnome.org/GNOME/gtk/issues/new).
+
+In the bug report please include:
+
+* Information about your system. For instance:
+
+   - which version of GTK you are using
+   - what operating system and version
+   - for Linux, which distribution
+   - if you built GTK, the list of options used to configure the build
+
+  And anything else you think is relevant.
+
+* How to reproduce the bug.
+
+  If you can reproduce it with one of the demo applications that are
+  built in the demos/ subdirectory, on one of the test programs that
+  are built in the tests/ subdirectory, that will be most convenient.
+  Otherwise, please include a short test program that exhibits the
+  behavior. As a last resort, you can also provide a pointer to a
+  larger piece of software that can be downloaded.
+
+* If the bug was a crash, the exact text that was printed out
+  when the crash occurred.
+
+* Further information such as stack traces may be useful, but
+  is not necessary.
+
+Contributing to GTK
+-------------------
+
+Please, follow the [contribution guide](./CONTRIBUTING.md) to know how to
+start contributing to GTK.
+
+Release notes
+-------------
+
+The release notes for GTK are part of the migration guide in the API
+reference. See:
+
+ - [3.x release notes](https://developer.gnome.org/gtk3/unstable/gtk-migrating-2-to-3.html)
+ - [4.x release notes](https://developer.gnome.org/gtk4/unstable/gtk-migrating-3-to-4.html)
+
+Licensing terms
+---------------
+
+GTK is released under the terms of the GNU Lesser General Public License,
+version 2.1 or, at your option, any later version, as published by the Free
+Software Foundation.
+
+Please, see the [`COPYING`](./COPYING) file for further information.
+
+GTK includes a small number of source files under the Apache license:
+- A fork of the roaring bitmaps implementation in [gtk/roaring](./gtk/roaring)
+- An adaptation of timsort from python in [gtk/timsort](./gtk/timsort)
