@@ -1,0 +1,10 @@
+[
+    {
+        "Name": "chromium_third_party_wayland_protocols_gtk",                   # 上游开源软件名全称
+        "License": "LGPLStyleLicense",   "GPLStyleLicense","LGPL-2.0+","LGPL-2.1+" ,"GPL-3.0+","SPDX:LGPL-2.1-or-later","LGPL-2.0-or-later","TCL","Khronos Group License","CC0","GTK+","Otte" ,"copyright","Imendio","SECTION","Kristian"      # 上游开源软件中包含的许可证信息
+        "License File": "COPYING"     # 许可证所在文件路径
+        "Version Number": "40ebed3a03aef096addc0af09fec4ec529d882a0",
+        "Upstream URL": "https://chromium.googlesource.com/external/github.com/GNOME/gtk.git@40ebed3a03aef096addc0af09fec4ec529d882a0",   # 上游软件包发布地址
+        "Description": "设计替代X的显示服务器gtk"           # 开源软件功能描述
+    }
+]
