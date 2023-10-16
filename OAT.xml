@@ -79,7 +79,6 @@ used to filter file path.
                 <policyitem type="compatibility" name="LGPL-2.0+" path="testsuite/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
                 <policyitem type="compatibility" name="LGPL-2.0+" path="COPYING" desc="经法务确认,涉及文件在render下进行了隔离" />
                 <policyitem type="compatibility" name="LGPL-2.1+" path="gdk/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
-                <policyitem type="compatibility" name="GPL-3.0+" path="tests/testscrolledge.c" desc="经法务确认,涉及文件在render下进行了隔离" />
                 <policyitem type="compatibility" name="LGPLStyleLicense" path="gdk/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
                 <policyitem type="compatibility" name="LGPLStyleLicense" path="gtk/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
                 <policyitem type="compatibility" name="LGPLStyleLicense" path="demos/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
@@ -107,6 +106,8 @@ used to filter file path.
                 desc="chromium原生文件无license" />
                 <filteritem type="filepath" name=".*xml"
                 desc="chromium原生文件无license" />
+                <filteritem type="filepath" name="tests/testscrolledge.c"
+                    desc="GPL-3.0+禁止使用" />
             </filefilter>
 
             <filefilter name="defaultFilter">

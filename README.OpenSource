@@ -1,11 +1,11 @@
 [
     {
-        "Name": "gtk",                  
-        "License": "LGPL-2.0-only",     
-        "License File": "COPYING",    
+        "Name": "gtk",
+        "License": "LGPL-2.0-only",
+        "License File": "COPYING",
         "Version Number": "40ebed3a03aef096addc0af09fec4ec529d882a0",
         "Owner": "jinchanggang@huawei.com",
-        "Upstream URL": "https://chromium.googlesource.com/external/github.com/GNOME/gtk.git@40ebed3a03aef096addc0af09fec4ec529d882a0",   
-        "Description": "设计替代X的显示服务器gtk"           
-    },
+        "Upstream URL": "https://chromium.googlesource.com/external/github.com/GNOME/gtk.git@40ebed3a03aef096addc0af09fec4ec529d882a0",
+        "Description": "设计替代X的显示服务器gtk"
+    }
 ]
