@@ -63,79 +63,78 @@ used to filter file path.
         <licensefile>COPYING</licensefile>
         <policylist>
             <policy name="projectPolicy" desc="">
-                <policyitem type="compatibility" name="LGPLStyleLicense" path="demos.*" desc="" />
-                <policyitem type="compatibility" name="LGPLStyleLicense" path="gdk.*" desc="" />
-                <policyitem type="compatibility" name="LGPLStyleLicense" path="gtk.*" desc="" />
-                <policyitem type="compatibility" name="LGPLStyleLicense" path="testsuite.*" desc="" />
-                <policyitem type="compatibility" name="LGPLStyleLicense" path="gsk.*" desc="" />
-                <policyitem type="compatibility" name="LGPLStyleLicense" path="modules.*" desc="" />
-                <policyitem type="compatibility" name="LGPLStyleLicense" path="tests.*" desc="" />
-                <policyitem type="compatibility" name="LGPLStyleLicense" path="tools.*" desc="" />
-                <policyitem type="compatibility" name="LGPLStyleLicense" path="po-properties.*" desc="" />
-                <policyitem type="compatibility" name="LGPLStyleLicense" path="po.*" desc="" />
-                <policyitem type="compatibility" name="LGPLStyleLicense" path="docs.*" desc="" />
-                <policyitem type="compatibility" name="GPLStyleLicense" path="po.*" desc="" />
-                <policyitem type="compatibility" name="GPLStyleLicense" path="po-properties.*" desc="" />
-                <policyitem type="compatibility" name="LGPL-2.0+" path="gdk.*" desc="" />
-                <policyitem type="compatibility" name="LGPL-2.0+" path="gtk.*" desc="" />
-                <policyitem type="compatibility" name="LGPL-2.0+" path="tests.*" desc="" />
-                <policyitem type="compatibility" name="LGPL-2.0+" path="gsk.*" desc="" />
-                <policyitem type="compatibility" name="LGPL-2.0+" path="tools.*" desc="" />
-                <policyitem type="compatibility" name="LGPL-2.0+" path="COPYING" desc="" />
-                <policyitem type="compatibility" name="LGPL-2.1+" path="gdk.*" desc="" />
-                <policyitem type="compatibility" name="GPL-3.0+" path="tests.*" desc="" />
-                <policyitem type="compatibility" name="SPDX:LGPL-2.1-or-later" path="gsk.*" desc="" />
-                <policyitem type="compatibility" name="SPDX:LGPL-2.1-or-later" path="docs.*" desc="" />
-                <policyitem type="compatibility" name="SPDX:LGPL-2.1-or-later" path="gdk.*" desc="" />
-                <policyitem type="compatibility" name="SPDX:LGPL-2.1-or-later" path="gtk.*" desc="" />
-                <policyitem type="compatibility" name="SPDX:LGPL-2.1-or-later" path="testsuite.*" desc="" />
-                <policyitem type="compatibility" name="LGPL-2.0-or-later" path="modules.*" desc="" />
-                <policyitem type="compatibility" name="TCL" path="gdk.*" desc="" />
-                <policyitem type="compatibility" name="TCL" path="gtk.*" desc="" />
-                <policyitem type="compatibility" name="CC0-1.0" path=".*" desc="" />
-                <policyitem type="compatibility" name="Other Permissive Licenses" path=".*" desc="" />
-                <policyitem type="compatibility" name="GTK+" path="po.*" desc="" />
-                <policyitem type="compatibility" name="Otte" path=".*" desc="" />
-                <policyitem type="compatibility" name="HPND-sell-variant" path=".*" desc="" />
-                <policyitem type="compatibility" name="LCS-Telegraphics" path=".*" desc="" />
+                <policyitem type="compatibility" name="LicenseRef-scancode-public-domain" path="gsk/gl/stb_rect_pack.h" desc="经法务确认为宽松型许可证" />
+                <policyitem type="compatibility" name="LCS-Telegraphics License" path="gdk/win32/.*" desc="经法务确认为宽松型许可证" />
+                <policyitem type="compatibility" name="LicenseRef-scancode-other-permissive" path="tests/.*" desc="经法务确认为宽松型许可证" />
+                <policyitem type="compatibility" name="HPND-sell-variant" path="gdk/x11/.*" desc="经法务确认为宽松型许可证" />
+                <policyitem type="compatibility" name="CC0-1.0" path="demos/.*" desc="经法务确认为宽松型许可证" />
+                <policyitem type="compatibility" name="CC0-1.0" path="demos/gtk-demo/.*" desc="经法务确认为宽松型许可证" />
+                <policyitem type="compatibility" name="TCL" path="gtk/.*" desc="经法务确认为宽松型许可证" />
+                <policyitem type="compatibility" name="LGPL-2.0-or-later" path="modules/media/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPL-2.0+" path="gdk/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPL-2.0+" path="gtk/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPL-2.0+" path="tests/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPL-2.0+" path="gsk/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPL-2.0+" path="tools/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPL-2.0+" path="testsuite/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPL-2.0+" path="COPYING" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPL-2.1+" path="gdk/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="gdk/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="gtk/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="demos/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="testsuite/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="gsk/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="modules/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="tests/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="tools/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="po-properties/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="po/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="docs/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="gtk.doap" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="LGPLStyleLicense" path="gtk.doap" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="SPDX:LGPL-2.1-or-later" path="gsk/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="SPDX:LGPL-2.1-or-later" path="docs/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="SPDX:LGPL-2.1-or-later" path="gdk/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="SPDX:LGPL-2.1-or-later" path="gtk/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
+                <policyitem type="compatibility" name="SPDX:LGPL-2.1-or-later" path="testsuite/.*" desc="经法务确认,涉及文件在render下进行了隔离" />
             </policy>
         </policylist>
         <filefilterlist>
             <filefilter name="defaultPolicyFilter"
                 desc="Filters for compatibility,license header policies">
                 <filteritem type="filepath" name=".*po"
-                desc="" />
+                desc="chromium原生文件无license" />
                 <filteritem type="filepath" name=".*xml"
-                desc="" />
-                <filteritem type="filepath" name="gsk/gl/stb_rect_pack.h"
-                desc="" />
-                <filteritem type="filepath" name="gdk/x11/xsettings-client.h"
-                desc="" /> 
+                desc="chromium原生文件无license" />
+                <filteritem type="filepath" name="tests/testscrolledge.c"
+                    desc="经确认，该文件不会使用" />
             </filefilter>
 
             <filefilter name="defaultFilter">
                 <filteritem type="filepath" name="README.OpenSource"
-                    desc="" />
-                <filteritem type="filepath" name=".*png"
-                    desc="" />
-                <filteritem type="filepath" name=".*spv"
-                    desc="" />
-                <filteritem type="filepath" name=".*jpg"
-                    desc="" />
-                <filteritem type="filepath" name=".*po"
-                    desc="" />
-                <filteritem type="filepath" name=".*webm"
-                    desc="" />
-                <filteritem type="filepath" name=".*oga"
-                    desc="" />
-                <filteritem type="filepath" name=".*gif"
-                    desc="" />
-                <filteritem type="filepath" name=".*expected"
-                    desc="" />
-                <filteritem type="filepath" name=".*ui"
-                    desc="" />
-                <filteritem type="filepath" name=".*ico"
-                    desc="" />
+                    desc="Filter readme.opensource files" />
+            </filefilter>
+             <filefilter name="binaryFileTypePolicyFilter">
+                <filteritem type="filename" name="*.png"
+                    desc="chromium原生二进制文件，不会使用" />
+                <filteritem type="filename" name="*.spv"
+                    desc="chromium原生二进制文件，不会使用" />
+                <filteritem type="filename" name="*.jpg"
+                    desc="chromium原生二进制文件，不会使用" />
+                <filteritem type="filename" name="*.po"
+                    desc="chromium原生二进制文件，不会使用" />
+                <filteritem type="filename" name="*.webm"
+                    desc="chromium原生二进制文件，不会使用" />
+                <filteritem type="filename" name="*.oga"
+                    desc="chromium原生二进制文件，不会使用" />
+                <filteritem type="filename" name="*.gif"
+                    desc="chromium原生二进制文件，不会使用" />
+                <filteritem type="filename" name="*.expected"
+                    desc="chromium原生二进制文件，不会使用" />
+                <filteritem type="filename" name="*.ui"
+                    desc="chromium原生二进制文件，不会使用" />
+                <filteritem type="filename" name="*.ico"
+                    desc="chromium原生二进制文件，不会使用" />
             </filefilter>
         </filefilterlist>
         <licensematcherlist>
@@ -146,7 +145,7 @@ used to filter file path.
                 //  Nothing fancy, just hexagonal tiling + cog wheels
                 " desc="" />
                 </licensematcher>
-                <licensematcher name="Other Permissive Licenses" desc="">
+                <licensematcher name="LicenseRef-scancode-other-permissive" desc="">
                 <licensetext name="
                 * This work is provided &quot;as is&quot;; redistribution and modification
                 * in whole or in part, in any medium, physical or electronic is
@@ -164,6 +163,32 @@ used to filter file path.
                 * in contract, strict liability, or tort (including negligence or
                 * otherwise) arising in any way out of the use of this software, even
                 * if advised of the possibility of such damage.
+                " desc="" />
+                </licensematcher>
+                <licensematcher name="LicenseRef-scancode-public-domain" desc="">
+                <licensetext name="
+                // stb_rect_pack.h - v0.99 - public domain - rectangle packing
+                // Sean Barrett 2014
+                //
+                // Useful for e.g. packing rectangular textures into an atlas.
+                // Does not do rotation.
+                //
+                // Not necessarily the awesomest packing method, but better than
+                // the totally naive one in stb_truetype (which is primarily what
+                // this is meant to replace).
+                //
+                // Has only had a few tests run, may have issues.
+                //
+                // More docs to come.
+                //
+                // No memory allocations; uses qsort() and assert() from stdlib.
+                // Can override those by defining STBRP_SORT and STBRP_ASSERT.
+                //
+                // This library currently uses the Skyline Bottom-Left algorithm.
+                //
+                // Please note: better rectangle packers are welcome! Please
+                // implement them to the same API, but with a different init
+                // function.
                 " desc="" />
                 </licensematcher>
                 <licensematcher name="MIT" desc="">
